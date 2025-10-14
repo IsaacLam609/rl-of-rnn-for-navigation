@@ -2,9 +2,11 @@
  (names linear_regression lorenz)
  (libraries cmdargs domainslib bos sofo owl owl-ode)
  (preprocess
-  (pps ppx_sexp_message ppx-forward-torch)))
+  (pps ppx_sexp_message ppx-forward-torch))
+)
 
 (env
  (dev
-  (flags
-   (:standard -warn-error -A))))
+  (flags (:standard -warn-error -A))
+  (link_flags (:standard -cclib -lgomp))))
+
