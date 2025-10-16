@@ -7,6 +7,5 @@
 
 (env
  (dev
-  (flags (:standard -warn-error -A))
-  (link_flags (:standard -cclib -lgomp))))
+  (flags (:standard -warn-error -A))))
 
