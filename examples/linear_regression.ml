@@ -56,7 +56,7 @@ let data_minibatch =
    ----------------------------------------- *)
 
 let batch_size = 512
-let max_iter = 10_000
+let max_iter = 1000
 
 let rec loop ~t ~out ~state =
   Stdlib.Gc.major ();
